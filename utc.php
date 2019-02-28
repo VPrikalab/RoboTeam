@@ -5,7 +5,7 @@ $data = array('phone' =>'79996479245');
 $filter = $data;
 $data_string = json_encode($filter);
 
-$url = 'http://geohelper.info/api/v1/phone-data?apiKey=k0OJnUIhJ3SR5DNWx3qRaSY5Wvdtl8JJ&locale%5Blang%5D=ru&filter%5Bphone%5D="79996479245"';
+$url = 'http://geohelper.info/api/v1/phone-data?apiKey=k0OJnUIhJ3SR5DNWx3qRaSY5Wvdtl8JJ&locale%5Blang%5D=ru&filter%5Bphone%5D='.$_POST['tel'];
 
 $curl = curl_init($url);
  
