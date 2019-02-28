@@ -1,3 +1,11 @@
+ <!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Данные формы</title>
+ </head>
+ <body>
+ <div class = "time_zone">
  <?php
 (float)$_POST['tel'];
 
@@ -23,3 +31,6 @@ $json_out = json_decode($result,true);
 file_put_contents('JSON.txt',$result); 
 echo $json_out["result"]["region"]["timezoneOffset"];
 ?>
+ </div>
+ </body>
+ </html>
